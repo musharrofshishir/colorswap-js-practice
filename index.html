@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorSwap</title>
+    <!-- Bootstrap 4.4.1 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="root">
+    <div class="loader">
+        <div id="load" class="section-header">
+            <h1>ColorSwap</h1>
+        </div>
+    </div>
+    <div id="main" class="main-wrapper">
+        <div class="main-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="section-header">
+                            <h1>ColorSwap</h1>
+                            <h4>Click the circles to change color!</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 m-auto">
+                        <div class="work mt-4">
+                            <div class="color-container">
+                                <!-- My color container goes here -->
+                            </div>
+                            <div class="color-switch mt-5">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div onclick= "green()" id="green" class="circle">
+                                            <!-- switch for changing color to green -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div onclick= "blue()" id="blue" class="circle">
+                                            <!-- switch for changing color to blue -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div onclick= "orange()" id="orange" class="circle">
+                                            <!-- switch for changing color to orange -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQueyr 3.5.0 -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

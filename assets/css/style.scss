@@ -1,0 +1,91 @@
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section-header{
+    text-align: center;
+    h1{
+        font-family: 'Dancing Script', cursive;
+    }
+    h4{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+    }
+}
+
+.loader{    
+    width: 100%;
+    height: 100%;
+
+    .section-header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+        opacity: 0;
+        z-index: 1050;
+        animation-name: fadeIn;
+        animation-timing-function: ease-out;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        transition: 1s all;
+        transition-timing-function: ease-out;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.main-wrapper{
+    opacity: 0;
+    transition: 1s all;
+    transition-timing-function: ease-in;
+    .main-wrap{
+        padding: 150px 0;
+        .work{
+            
+            .color-container{
+                
+                max-width: 450px;
+                height: 250px;
+                margin: 0 auto;
+                border-radius: 6px;
+                background: white;
+                transition: .3s all;
+                transition-timing-function: ease-in-out;
+                box-shadow: 0px 35px 132px -52px rgba(0,0,0,0.29);
+            }
+            .color-switch{
+                
+                .circle{
+                    margin: 0 auto;
+                    max-width: 100px;
+                    height: 100px;
+                    border: 5px solid white;
+                    border-radius: 50%;
+                    transition: .3s all;
+                    cursor: pointer;
+                    box-shadow: 0px 35px 90px -45px rgba(0,0,0,0.89);
+                }
+                #green{
+                    background-color: green;
+                }
+                #blue{
+                    background-color: #0e185d;
+                }
+                #orange{
+                    background-color: #ea3f00;
+                }
+            }
+        }
+    }
+}
