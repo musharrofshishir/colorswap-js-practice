@@ -5,7 +5,7 @@ var body = document.querySelector("#root");
 
 
 setTimeout(function slide(){
-    load.style.top = "22.5%";
+    load.style.top = "178px";
     load.style.opacity = "0";
 },3000); //3
 
