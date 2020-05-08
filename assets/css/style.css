@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #151515 !important;
+  }
+  .section-header h1 {
+    color: white;
+  }
+  .section-header h4 {
+    color: white;
+  }
+}
+
 .section-header {
   text-align: center;
 }
